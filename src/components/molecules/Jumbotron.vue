@@ -33,7 +33,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .jumbotron {
-  background-image: url(../../assets/img/jpg/hero.jpg);
+  background-image: url(../../../public/assets/img/jpg/hero.jpg);
   background-size: cover;
   height: 700px;
   padding-right: 180px;
