@@ -1,1 +1,16 @@
-@import '~vuetify/lib/styles/main.sass';
+@import './variables.scss';
+@import "@mdi/font/css/materialdesignicons.css";
+
+@import "vuetify/styles";
+
+.v-btn {
+    font-weight: 400 !important;
+}
+
+.font-weight-semi-normal {
+    font-weight: 500;
+}
+
+.font-weight-semi {
+    font-weight: 600;
+}
