@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <h2 class="font-weight-semi mb-2 mt-16">Latest</h2>
+        <h2 class="font-weight-semi mb-2 mt-16">Latest Recipe</h2>
       </v-col>
     </v-row>
     <v-row>
