@@ -1,12 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="my-16">
+    <h2 class="font-weight-semi mb-2">Latest Recipe</h2>
     <v-row>
-      <v-col>
-        <h2 class="font-weight-semi mb-2 mt-16">Latest Recipe</h2>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col v-for="recipe in latestRecipes" :key="recipe.img">
+      <v-col v-for="recipe in latestRecipes" :key="recipe.img" cols="4">
         <latest-card :recipe="recipe" />
       </v-col>
     </v-row>

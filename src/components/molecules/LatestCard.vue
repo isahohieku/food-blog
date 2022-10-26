@@ -1,7 +1,12 @@
 <template>
   <v-card class="p-0 d-flex flex-column" elevation="0">
     <div>
-      <v-img :src="recipe.img"></v-img>
+      <v-img
+        :src="recipe.img"
+        :alt="recipe.title"
+        height="240"
+        width="360"
+      ></v-img>
     </div>
     <div class="d-flex align-center my-3">
       <p class="text-red text-uppercase text-caption">{{ recipe.category }}</p>
@@ -10,9 +15,9 @@
         {{ recipe.readTime }} mins read
       </p>
     </div>
-    <h3 class="font-weight-regular">
+    <v-card-title class="font-weight-regular pl-0 pt-0">
       {{ recipe.title }}
-    </h3>
+    </v-card-title>
   </v-card>
 </template>
 

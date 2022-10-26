@@ -1,5 +1,8 @@
 <template>
   <v-app-bar elevation="0">
+    <v-app-bar-nav-icon
+      ><v-img src="assets/img/png/hamburger.png" width="30"
+    /></v-app-bar-nav-icon>
     <v-spacer />
     <v-btn flat v-for="item in menuItems" :key="item.title" :to="item.path">
       {{ item.title }}
