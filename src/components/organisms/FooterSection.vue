@@ -63,10 +63,26 @@
       </v-row>
       <v-divider class="mb-3" />
       <v-row class="pb-12 text-grey">
-        <v-col>
-          <p class="text-body-caption">
-            2020 Food Recipes - All rights reserved
+        <v-col class="d-flex align-center justify-space-between">
+          <p class="text-body-2">
+            &copy;2020 Food Recipes - All rights reserved
           </p>
+          <v-card elevation="0" color="transparent" class="px-0 py-0">
+            <v-card-text class="px-0 py-0">
+              <v-btn
+                :to="route.path"
+                v-for="route in socialRoutes"
+                :key="route.icon"
+                class="mx-0 text-grey bg-transparent"
+                height="30"
+                width="30"
+                icon
+                elevation="0"
+              >
+                <v-icon size="24px"> mdi-{{ route.icon }} </v-icon>
+              </v-btn>
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -79,6 +95,7 @@ import { defineComponent, ref } from "vue";
 interface FooterRoutes {
   path: string;
   name: string;
+  icon?: string;
 }
 
 export default defineComponent({
@@ -126,18 +143,22 @@ export default defineComponent({
       {
         name: "Facebook",
         path: "",
+        icon: "facebook",
       },
       {
         name: "Twitter",
         path: "",
+        icon: "twitter",
       },
       {
         name: "Instagram",
         path: "",
+        icon: "instagram",
       },
       {
         name: "Youtube",
         path: "",
+        icon: "youtube",
       },
     ]);
 
