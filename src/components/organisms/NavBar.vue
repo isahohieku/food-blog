@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar elevation="0">
+  <v-app-bar elevation="3">
     <v-container class="d-flex align-center">
       <v-app-bar-nav-icon
         ><v-img src="assets/img/png/hamburger.png" width="30"

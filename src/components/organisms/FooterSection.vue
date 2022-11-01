@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <v-container>
+    <v-container class="container-max">
       <v-row>
         <v-col cols="4">
           <v-img
@@ -65,7 +65,7 @@
       <v-row class="pb-12 text-grey">
         <v-col class="d-flex align-center justify-space-between">
           <p class="text-body-2">
-            &copy;2020 Food Recipes - All rights reserved
+            &copy;{{ year }} Food Recipes - All rights reserved
           </p>
           <v-card elevation="0" color="transparent" class="px-0 py-0">
             <v-card-text class="px-0 py-0">
@@ -162,7 +162,9 @@ export default defineComponent({
       },
     ]);
 
-    return { mainRoutes, socialRoutes, legalRoutes };
+    const year = new Date().getFullYear();
+
+    return { mainRoutes, socialRoutes, legalRoutes, year };
   },
 });
 </script>

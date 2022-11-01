@@ -1,5 +1,5 @@
 // Vuetify
-import { createVuetify } from "vuetify";
+import { createVuetify } from "vuetify/framework";
 
 export default createVuetify({
   theme: {

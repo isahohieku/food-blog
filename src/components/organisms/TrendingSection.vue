@@ -1,8 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="container-max mt-16 mb-16">
     <v-row>
       <v-col>
-        <h2 class="font-weight-semi mb-2 mt-16">Trending</h2>
+        <h2 class="font-weight-semi mb-2">Trending</h2>
       </v-col>
     </v-row>
     <v-row>

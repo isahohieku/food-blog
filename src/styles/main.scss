@@ -1,10 +1,12 @@
-@import './variables.scss';
 @import "@mdi/font/css/materialdesignicons.css";
-
 @import "vuetify/styles";
 
 .v-btn {
     font-weight: 400 !important;
+}
+
+.container-max {
+    max-width: 1200px !important;
 }
 
 .font-weight-semi-normal {
@@ -13,4 +15,9 @@
 
 .font-weight-semi {
     font-weight: 600;
+}
+
+.email-input .v-field {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }

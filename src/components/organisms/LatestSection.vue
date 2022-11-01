@@ -1,5 +1,5 @@
 <template>
-  <v-container class="my-16">
+  <v-container class="my-16 container-max">
     <h2 class="font-weight-semi mb-2">Latest Recipe</h2>
     <v-row>
       <v-col v-for="recipe in latestRecipes" :key="recipe.img" cols="4">
